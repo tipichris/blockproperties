@@ -1,0 +1,49 @@
+blockproperties: Block Element Properties Plugin
+================================================
+
+Original (for TinyMCE 2) by Andrew Tetlaw
+http://tetlaw.id.au/view/blog/block-element-properties-plugin-for-tinymce/
+Copyright Andrew Tetlaw 2006
+
+Updated to TinyMCE 3.0 API by Chris Hastie 2011-11-18
+Code revisions Copyright Chris Hastie 2011
+
+LICENCE
+
+This file is part of blockproperties, a plugin for TinyMCE.
+
+blockproperties is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+blockproperties is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with blockproperties. If not, see <http://www.gnu.org/licenses/>.
+
+INSTRUCTIONS
+
+This plugin is a helper to the TinyMCE Format Block select list. It enables
+you to edit several common attributes of block (p, div, h1-6 etc) elements, 
+such as title, id, class and style.
+
+Add 'blockproperties' to your loaded plugins and to your toolbar button row.
+eg
+
+tinyMCE.init({
+        theme : "Love",
+        mode : "textareas",
+        plugins : "blockproperties",
+        theme_advanced_buttons3_add : "blockproperties"
+});
+
+Adding 'blockproperties' to your buttons next to the 'formatblock' entry
+makes the the UI a little more intuitive.
+
+To use, simply place the cursor within the block element you wish to edit
+and click the button. The element selected will be the block element 
+immediately containing the current cursor position.

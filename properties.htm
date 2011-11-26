@@ -1,0 +1,72 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{#blockproperties.title_element}</title>
+    <script language="javascript" type="text/javascript" src="../../tiny_mce_popup.js"></script>
+    <script language="javascript" type="text/javascript" src="jscripts/properties.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/popup.css" />
+    <base target="_self" />
+</head>
+<body onload="init();" style="display: none">
+<form onsubmit="return false;" action="#">
+
+<h1 id="dialog-title">{#blockproperties.title_element}</h1>
+    <div class="tabs">
+        <ul>
+            <li id="general_tab" class="current"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">{#blockproperties.general_tab}</a></span></li>
+        </ul>
+    </div>
+    <div class="panel_wrapper">
+        <div id="general_panel" class="panel current">
+            <fieldset>
+                <legend>{#blockproperties.fieldset_attrib_tab}</legend>
+                <table border="0" cellpadding="0" cellspacing="4">
+                    <tr>
+                        <td class="label"><label id="titlelabel" for="title">{#blockproperties.attribute_label_title}</label>:</td> 
+                        <td><input id="title" name="title" type="text" value="" class="field" /></td> 
+                    </tr>
+                    <tr>
+                        <td class="label"><label id="idlabel" for="id">{#blockproperties.attribute_label_id}</label>:</td> 
+                        <td><input id="id" name="id" type="text" value="" class="field" /></td> 
+                    </tr>
+                    <tr>
+                        <td class="label"><label id="classlabel" for="class">{#blockproperties.attribute_label_class}</label>:</td> 
+                        <td><input id="class" name="class" type="text" value="" class="field" /></td> 
+                    </tr>
+                    <tr>
+                        <td class="label"><label id="stylelabel" for="class">{#blockproperties.attribute_label_style}</label>:</td> 
+                        <td><input id="style" name="style" type="text" value="" class="field" /></td> 
+                    </tr>
+                    <tr>
+                        <td class="label"><label id="dirlabel" for="dir">{#blockproperties.attribute_label_langdir}</label>:</td> 
+                        <td>
+                            <select id="dir" name="dir" class="field"> 
+                                <option value="">{#blockproperties.not_set}</option> 
+                                <option value="ltr">{#blockproperties.attribute_option_ltr}</option> 
+                                <option value="rtl">{#blockproperties.attribute_option_rtl}</option> 
+                            </select>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td class="label"><label id="langlabel" for="lang">{#blockproperties.attribute_label_langcode}</label>:</td> 
+                        <td>
+                            <input id="lang" name="lang" type="text" value="" class="field" />
+                        </td> 
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+
+    </div>
+    <div class="mceActionPanel">
+        <div style="float: left">
+            <input type="button" id="insert" name="insert" value="{#update}" onclick="updateElement();" />
+        </div>
+
+        <div style="float: right">
+            <input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+        </div>
+    </div>
+
+</form>
+</body>
+</html>
