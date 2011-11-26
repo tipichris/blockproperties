@@ -31,7 +31,7 @@
               longname : 'Block Element Properties plugin',
               author : 'Andrew Tetlaw, Chris Hastie',
               authorurl : 'http://tetlaw.id.au',
-              infourl : 'http://tetlaw.id.au/view/blog/block-element-properties-plugin-for-tinymce/',
+              infourl : 'http://www.oak-wood.co.uk/oss/blockproperties',
               version : "2.0"
           };
       },
